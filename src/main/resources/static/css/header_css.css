@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    font-family: "Source Sans 3", sans-serif!important;
+}
+.title{
+      font-size: 42px;
+}
+.navbar-items{
+  
+    font-weight: bold;
+    color: #ede8d0!important;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.navbar-items::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background-color: #ede8d0;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-items:hover {
+  color: #fff6b0; 
+}
+
+.navbar-items:hover::after {
+  width: 100%;
+}
+
+.navbar-options{
+    font-size: 20px;
+    margin: 0 40px;
+    vertical-align: bottom;
+} 
+.navbar {
+    min-height: 80px;
+    align-items: stretch;
+    padding-bottom: 0px;
+    padding-top: 0px
+}
+
+.cart-icon-wrapper {
+   background-color: #ede8d0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 75px;
+    position: absolute;
+    right: 0px;
+}
+
+.cart-icon-wrapper:hover {
+    background-color: #e6e0c5;
+}

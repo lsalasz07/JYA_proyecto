@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head th:replace="~{layout/header :: head}">
+        <title>J&J Select</title>        
+    </head>
+    <body>
+        <header th:replace="~{layout/header :: header}"/>
+        <div>
+               <img th:src="@{/images/hero-image.png}" alt="hero image" class="img-fluid">
+        </div>
+        <div class="container py-5">
+            <h3 class="text-center fw-bold" style="color: #3b2b1e;">Productos nuevos</h3>
+            <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+
+                <!-- Flecha izquierda -->
+                <button class="btn btn-outline-dark" onclick="moveCarousel(-1)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+                <!-- Contenedor de productos -->
+                <div class="d-flex overflow-hidden" id="carousel-container" style="width: 600px;">
+                    <div class="d-flex transition" id="carousel-track" style="gap: 20px;">
+            
+                        <img th:src="@{/images/productos/producto-1.png}"  alt="Producto 1" width="265" height="258">
+                        <img th:src="@{/images/productos/depiladora.jpg}"  alt="Producto 2" width="265" height="258">
+                        <img th:src="@{/images/productos/producto-3.png}" alt="Producto 3" width="265" height="258">
+                        <!-- Las mismas otra vez para simular desplazamiento -->
+                        <img th:src="@{/images/productos/producto-1.png}" alt="Producto 1" width="265" height="258">
+                        <img th:src="@{/images/productos/depiladora.jpg}" alt="Producto 2" width="265" height="258">
+                        <img th:src="@{/images/productos/producto-3.png}" alt="Producto 3" width="265" height="258">
+                    </div>
+                </div>
+
+                <!-- Flecha derecha -->
+                <button class="btn btn-outline-dark" onclick="moveCarousel(1)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer th:replace="~{layout/footer :: footer}"/>
+        <script>
+            let currentIndex = 0;
+            const track = document.getElementById('carousel-track');
+            const itemWidth = 285; // ancho imagen (265) + espacio (20)
+
+            function moveCarousel(direction) {
+                currentIndex += direction;
+                const maxIndex = track.children.length - 3;
+
+                if (currentIndex < 0) currentIndex = 0;
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+                const offset = -currentIndex * itemWidth;
+                track.style.transform = `translateX(${offset}px)`;
+            }
+        </script>
+
+    </body>
+</html>

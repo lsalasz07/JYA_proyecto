@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title>J&A Select</title>
+        <meta charset="UTF-8"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <link th:href="@{/css/header_css.css}" rel="stylesheet"/>
+         <link th:href="@{/css/footer_css.css}" rel="stylesheet"/> 
+        <link th:href="@{/css/tienda.css}" rel="stylesheet"/>
+         <link th:href="@{/css/contacto.css}" rel="stylesheet"/> 
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>       
+
+    </head>
+    <body>
+        <header th:fragment="header" class="header">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container d-flex justify-content-between align-items-stretch">
+                    <div class="d-flex align-items-center">
+                        <a th:href="@{/}" class="navbar-brand navbar-items title">[[#{aplicacion.titulo}]]</a>
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item px-2"><a class="nav-link navbar-options" th:href="@{/}">[[#{aplicacion.inicio}]]</a></li>
+                            <li class="nav-item px-2"><a class="nav-link navbar-options" th:href="@{/tienda}">[[#{aplicacion.tienda}]]</a></li>
+                            <li class="nav-item px-2"><a class="nav-link navbar-options" th:href="@{/nosotros}">[[#{aplicacion.nosotros}]]</a></li>
+                            <li class="nav-item px-2"><a class="nav-link navbar-options" th:href="@{/contacto}">[[#{aplicacion.contacto}]]</a></li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link d-flex align-items-center gap-2" th:href="@{/login}">
+                                    <img th:src="@{/images/login-icon.png}" alt="Usuario" width="18" height="18">
+                                        <span>[[#{aplicacion.login}]]</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Carrito -->
+                    <div class="cart-icon-wrapper">
+                        <a th:href="@{/carrito}" class="nav-link p-0">
+                            <img th:src="@{/images/cart-icon.png}" alt="Carrito" width="28" height="28">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+
+        </header>
+    </body>
+</html>

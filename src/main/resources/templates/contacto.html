@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="~{layout/header :: head}">
+    <title>Contacto | J&A Select</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<header th:replace="~{layout/header :: header}"/>
+
+<section class="contacto-hero">
+  <h2>CONTACTO</h2>
+</section>
+
+<section class="contacto-informacion">
+  <div class="contacto-item">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="tel:+50672057266">+ 506 7205-7266</a>
+  </div>
+  <div class="contacto-item">
+    <i class="fa-regular fa-envelope"></i>
+    <a href="mailto:j&a.cr@gmail.com">j&a.cr@gmail.com</a>
+  </div>
+  <div class="contacto-item">
+    <i class="fa-brands fa-instagram"></i>
+    <a href="#">follow</a>
+  </div>
+</section>
+
+<section class="contacto-formulario">
+  <form action="#" method="post">
+    <div class="form-row">
+      <input type="text" name="nombre" placeholder="Nombre" required />
+      <input type="email" name="email" placeholder="Email" required />
+    </div>
+    <input type="text" name="asunto" placeholder="Asunto" required />
+    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+<footer th:replace="~{layout/footer :: footer}"/>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="~{layout/header :: head}">
+    <title>Nosotros | J&A Select</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<header th:replace="~{layout/header :: header}"/>
+
+
+<div style="height: 120px; background-color: #3b2b1e;"></div>
+
+
+<div class="container " style="padding:7rem 0;">
+    <div class="d-flex justify-content-center mb-4">
+        <div class="border border-dark px-4 py-3 d-flex align-items-center gap-3">
+            <i class="fas fa-arrow-right fa-lg" style="color: #3b2b1e;"></i>
+            <h4 class="fw-bold m-0" style="color: #3b2b1e;">Quienes somos</h4>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <p style="text-align: justify; color: #3b2b1e;     padding-top: 1rem;">
+                Somos una tienda en línea dedicada a ofrecer productos exclusivos, útiles y cuidadosamente seleccionados para personas que 
+                buscan calidad y estilo en un solo lugar. Nuestro objetivo es brindar una experiencia de compra sencilla, confiable y diferente, destacándonos 
+                por ofrecer artículos únicos que no se encuentran fácilmente en otras tiendas.
+            </p>
+            <p style="text-align: justify; color: #3b2b1e;">
+                J&A Select nació en Costa Rica en el 2024, creada por Jhonathan Solís y Ariana Rodríguez. Desde el primer día, nuestra visión ha sido conectar 
+                innovación con necesidades reales, llevando hasta tu hogar productos originales que marcan la diferencia.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="~{layout/footer :: footer}"/>
+</body>
+</html>

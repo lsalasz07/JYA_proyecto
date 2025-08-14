@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+.footer {
+    background-color: #1f2224;
+    color: #ede8d0;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ede8d0;
+    text-align: left;
+}
+
+footer.footer p > a {
+    color: #ede8d0 !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+}
+
+footer.footer p > a:hover {
+    color: #fff6b0 !important;
+    text-decoration: underline !important;
+}
+
+
+
+
+.footer-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ede8d0;
+    border-radius: 0;
+    color: #ede8d0;
+    width: 100%;
+    padding: 6px 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.footer-input:focus {
+    border-bottom: 1px solid #fff6b0;
+    box-shadow: none;
+}
+
+.footer-input::placeholder {
+    color: #bcb8a7;
+    font-size: 14px;
+}
+
+
+.btn-custom {
+    background-color: #3b2b1e;
+    color: #ede8d0;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #5a3e2b;
+    color: #fff;
+}

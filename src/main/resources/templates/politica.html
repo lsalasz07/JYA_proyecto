@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="~{layout/header :: head}">
+    <title>Política de la tienda</title>
+</head>
+<body>
+    <header th:replace="~{layout/header :: header}"/>
+
+
+<div style="height: 120px; background-color: #3b2b1e;"></div>
+
+
+    <main class="container" style="padding:2rem 0;">
+        <h5 class="text-center border border-dark py-4 w-50 mx-auto fw-bold">Política de la tienda</h5>
+
+        <div class="text-center mt-4">
+            <h6 class="fw-bold">Servicio al cliente</h6>
+            <p class="w-75 mx-auto">
+              En nuestra tienda nos comprometemos a brindarte el mejor servicio al cliente. Estamos aquí para responder tus consultas, resolver problemas y garantizar una experiencia de compra satisfactoria. 
+              Puedes contactarnos por teléfono, correo electrónico o a través de nuestro formulario en línea. Tu satisfacción es nuestra prioridad.
+            </p>
+
+            <h6 class="fw-bold mt-4">Seguridad y privacidad</h6>
+            <p class="w-75 mx-auto">
+               La seguridad y privacidad de tus datos son fundamentales para nosotros. Utilizamos las últimas tecnologías de encriptación para proteger tu información personal y de pago. Nunca compartiremos tus datos con terceros sin tu consentimiento. Consulta nuestra política de privacidad para obtener más detalles sobre cómo manejamos y protegemos tus datos.
+            </p>
+
+            <h6 class="fw-bold mt-4">Política de devolución</h6>
+            <p class="w-75 mx-auto">
+                Aceptamos devoluciones dentro de los 30 días posteriores a la compra. Si no estás satisfecho con tu pedido, contáctanos y estaremos encantados de ayudarte a procesar una devolución o cambio. Por favor, asegúrate de que los productos estén en su estado original con todas las etiquetas y empaques. Consulta nuestra política de devoluciones para obtener más información.
+            </p>
+
+            <h6 class="fw-bold mt-4">Formas de pago</h6>
+            <p>- SINPE móvil</p>
+             
+        </div>
+    </main>
+
+    <footer th:replace="~{layout/footer :: footer}"/>
+</body>
+</html>
