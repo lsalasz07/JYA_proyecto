@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class NavegacionController {
-  @GetMapping("/")
-    public String mostrarInicio() {
-        return "index";
-    }
+//  @GetMapping("/")
+//    public String mostrarInicio() {
+//        return "index";
+//    }
 
     @GetMapping("/contacto")
     public String mostrarContacto() {
